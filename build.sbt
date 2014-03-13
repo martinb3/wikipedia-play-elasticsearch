@@ -2,13 +2,10 @@ import play.Project._
 
 name := "wikipedia-play-elasticsearch"
 
-libraryDependencies += "jline" % "jline" % "2.11"
+resolvers += "Typesafe Repo" at "http://repo.typesafe.com/typesafe/releases/"
 
-libraryDependencies += "org.slf4j" % "slf4j-api" % "1.6.1"
+libraryDependencies += "org.elasticsearch" % "elasticsearch" % "0.90.12"
 
-libraryDependencies += "org.slf4j" % "slf4j-nop" % "1.6.1"
-
-// mainClass in (Compile, run) := Some("org.mbs3.rax.elasticsearch.play.Demo")
+libraryDependencies += "io.searchbox" % "jest" % "0.0.6" 
 
 playScalaSettings
-
